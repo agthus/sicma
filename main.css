@@ -1,0 +1,133 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 62.5%; }
+
+:root {
+	--beige : #fdef96;
+	--mustard : #f7b71d;
+	--dark-yellow : #afa939;
+	--green : #2b580c;
+	--black : #141414;
+}
+
+.header {
+	width: 100vw;
+	height: 100vh;
+}
+
+.slide {
+	display: flex;
+	flex-direction: column;
+
+	height: 92vh;
+}
+
+.slide__background {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+
+	background-image: url(media/img/tundra.jpg);
+	background-position: center;
+	background-size: cover;
+	filter: brightness(.4);
+}
+
+.slide__info {
+	width: 80%;
+	bottom: 20rem;
+	left: 4rem;
+	z-index: 2;
+	position: absolute;
+}
+
+.slide__title {
+	font-family: "Nunito-Bold";
+	font-size: 3.2rem;
+	color: var(--mustard);
+}
+
+.slide__txt {
+	padding-top: 1rem;
+
+	font-family: "Nunito-Light";
+	font-size: 2.4rem;
+	color: white;
+}
+
+.slide-nav {
+	display: flex;
+	width: auto;
+	height: auto;
+
+	bottom: 8rem;
+	left: 44%;
+	z-index: 2;
+	position: absolute;
+}
+
+.slide-nav__item {
+	margin: 0 .4rem;
+
+	width: 2rem;
+	height: 2rem;
+
+	background-image: url(media/img/slide-nav__item--unselected.png);
+	cursor: pointer;
+}
+
+.slide-nav__item--selected:hover {
+	transition: .5s;
+	background-image: url(media/img/slide-nav__item--selected.png);
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	height: 8vh;
+	position: absolute;
+	z-index: 2;
+	/* background-color: var(--black); */
+}
+
+.logos {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	font-family: "Nunito-Bold";
+	font-size: 2.4rem;
+	color: rgb(255, 255, 255);
+}
+
+.logo--p {
+	padding-left: 4rem;
+}
+
+.logo-conabio {
+	width: auto;
+	height: 3.2rem;
+}
+
+.logo-conabio--m {
+	margin-left: 1.6rem;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+
+	padding: 1rem;
+}
+
+.navbar__item {
+	padding-right: 3rem;
+
+	font-family: "Nunito-Light";
+	font-size: 2rem;
+	text-decoration: none;
+	color: white;
+}
